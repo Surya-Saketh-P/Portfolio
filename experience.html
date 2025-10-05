@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya | Experience</title>
+    <link rel="icon" href="images/a minimalist and pro.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(230, 230, 230);
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            background-color: rgb(18, 18, 28);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem 9%;
+            background-color: rgba(18, 18, 28, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: rgb(155, 93, 229);
+            font-weight: 700;
+        }
+
+        nav a {
+            font-size: 1.6rem;
+            margin-left: 3rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: rgb(241, 91, 181);
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 10rem 9% 2rem;
+        }
+
+        span {
+            color: rgb(155, 93, 229);
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 4.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            margin-top: 1.5rem;
+            border-radius: 4rem;
+            font-size: 1.6rem;
+            color: rgb(155, 93, 229);
+            border: 2px solid rgb(155, 93, 229);
+            background-color: transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(155, 93, 229);
+            color: rgb(18, 18, 28);
+        }
+
+        /* Simplified layout for experience/projects */
+        .item-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .item-card {
+            background: rgba(30, 30, 40, 0.7);
+            padding: 2.5rem;
+            border-radius: 1rem;
+            border-left: 5px solid rgb(155, 93, 229);
+        }
+
+        .item-card h2 {
+            font-size: 2.2rem;
+            color: rgb(155, 93, 229);
+        }
+
+        .item-card h3 {
+            font-size: 1.8rem;
+            margin: 0.5rem 0;
+            color: rgb(200, 200, 200);
+        }
+
+        .item-card p {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 3%;
+            }
+
+            section {
+                padding: 10rem 3% 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Surya</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html" class="active">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="item-container">
+            <div class="item-card">
+                <h2>Personal Portfolio</h2>
+                <h3>What you're looking at right now!</h3>
+                <p>Built with HTML and CSS. Designed to be clean, responsive, and a true reflection of my developer
+                    personality.</p>
+                <a href="https://github.com/Surya-Saketh-P" class="btn">View Code</a>
+            </div>
+            <div class="item-card">
+                <h2>To-Do List App</h2>
+                <h3>A classic rite of passage for every developer.</h3>
+                <p>A simple yet effective application to manage daily tasks. It taught me the fundamentals of DOM
+                    manipulation. More useful than my actual memory.</p>
+                <a href="https://github.com/Surya-Saketh-P" class="btn">View Code</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
