@@ -145,25 +145,59 @@
       box-shadow: 0 0 25px rgb(241, 91, 181);
     }
 
-    @media (max-width: 995px) {
-      section {
-        flex-direction: column;
-        text-align: center;
-        gap: 4rem;
-      }
+  @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 5%;
+  }
 
-      .home-img img {
-        width: 60vw;
-      }
+  .logo {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+  }
 
-      .home-content h1 {
-        font-size: 4.2rem;
-      }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
 
-      .home-content h3 {
-        font-size: 2.5rem;
-      }
-    }
+  nav a {
+    font-size: 1.3rem;
+    margin: 0.8rem 1rem;
+  }
+
+  .home-img img {
+    width: 65vw;
+  }
+
+  .home-content h1 {
+    font-size: 3.4rem;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1.4rem;
+    max-width: 90%;
+    margin: 0 auto 2rem auto;
+  }
+
+  .social-icons a {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+  }
+}
   </style>
 </head>
 
@@ -213,5 +247,6 @@
     </div>
   </section>
 </body>
+
 
 </html>
